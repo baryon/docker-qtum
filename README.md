@@ -8,7 +8,7 @@ Qtum is a new blockchain based on Bitcoin Core that integrates Ethereum based sm
 
 This Docker image provides `qtumd`, `qtum-cli` and `qtum-tx` applications which can be used to run and interact with a qtum server.
 
-Images are provided for a range of current and historic Qtum forks.
+Images are provided by [Qtum Project](https://github.com/qtumproject/qtum).
 To see the available versions/tags, please visit the appropriate pages on Docker Hub:
 
 * [Qtum](https://hub.docker.com/r/baryon/qtum/tags/)
