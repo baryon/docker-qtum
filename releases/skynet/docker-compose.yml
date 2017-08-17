@@ -1,0 +1,17 @@
+version: "2"
+
+services:
+  qtumd:
+    image: baryon/qtum:0.14.0 
+    ports:
+    - "8333:8333"
+    - "18332:18332"
+    volumes:
+      - /data/qtum/qtum-data:/data
+  qtum-cli:
+    image: baryon/qtum:0.14.0
+    entrypoint: ["/entrypoint.sh", "qtum-cli"]
+    command: ""
+    depends_on:
+      - qtumd
+    network_mode: service:qtumd
