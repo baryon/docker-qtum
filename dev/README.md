@@ -34,7 +34,7 @@ By default, Docker will create ephemeral containers. That is, the blockchain dat
 To keep your blockchain data between container restarts or upgrades, simply add the `-v` option to create a [data volume](https://docs.docker.com/engine/tutorials/dockervolumes/):
 
 ```
-$ docker run -d --rm --name qtumd -v /data/qtum/qtum-data:/data baryon/qtum
+$ docker run -d --rm --name qtumd -v /data/qtum/qtum-data:/data baryon/qtum:dev
 $ docker ps
 $ docker inspect qtum-data
 ```

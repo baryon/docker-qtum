@@ -27,7 +27,6 @@ RUN mkdir $QTUM_DATA \
 	&& chown -h qtum:qtum /home/qtum/.qtum
 VOLUME /data
 
-RUN apt-get install -y gosu
 #https://stackoverflow.com/questions/38882654/docker-entrypoint-running-bash-script-gets-permission-denied/41571589#41571589
 #you must have permission to run. If not then try: `chmod +x docker-entrypoint.sh`
 COPY docker-entrypoint.sh /entrypoint.sh
