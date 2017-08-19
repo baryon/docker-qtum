@@ -28,7 +28,7 @@ docker build --rm -t baryon/qtum:0.14.0 .
 sudo rm -rf /data/qtum/qtum-data # options 
 sudo mkdir -p /data/qtum/qtum-data
 sudo chmod a+w /data/qtum/qtum-data
-docker-compose -f docker-compose.yml up
+docker-compose -f docker-compose.yml up qtumd
 ```
 
 ### Launch qtumd
@@ -36,7 +36,7 @@ docker-compose -f docker-compose.yml up
 To launch your node, simply type `docker-compose up`:
 
 ```sh
-$ docker-compose up -d  # start qtumd in the background
+$ docker-compose up -d qtumd # start qtumd in the background
 $ docker-compose ps     # show running processes
 $ docker-compose down   # stop qtumd (blockchain data will remain on disk)
 ```
